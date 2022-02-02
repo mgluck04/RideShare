@@ -1,21 +1,23 @@
 public class Car {
     //fields
-    private int originalLocation;
+    private int oLoc;
     private int destination;
     private int numPassengers;
+    private int direction;
     private int position;
 
     //constructor
-    public Car(){
-        originalLocation = 0;
-        position = originalLocation;
-        destination = 5;
-        numPassengers = 0;
+    public Car(int myOLocation, int myPos, int myDest, int myNumPass, int myDirection){
+        oLoc = myOLocation;
+        position = myPos;
+        destination = myDest;
+        numPassengers = myNumPass;
+        direction = myDirection;
     }
 
     //methods
     public String toString(){
-        return ("" + destination);
+        return ("Starting Position: " + oLoc + " ");
     }
 
     public void drive(){
