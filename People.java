@@ -15,4 +15,8 @@ public class People{
     public String toString(){
         return "loc = " + currentLocation + "dest = " + destination;
     }
+
+    public int originLoc(){
+        return originalLocation;
+    }
 }

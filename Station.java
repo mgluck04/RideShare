@@ -1,6 +1,10 @@
+import java.util.*;
+
 public class Station {
     //fields
-    private People[] stationNumber;
+    private ArrayList<People> station; 
+    private int[] stationNumber;
+     
 
     //constructor
     public Station(){
@@ -8,6 +12,9 @@ public class Station {
     }
 
     //methods
+    public void personAdd(People person1){
+        stationNumber[People.originLoc()] = person1;
+    }
 
 
 }
