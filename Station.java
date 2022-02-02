@@ -3,17 +3,16 @@ import java.util.*;
 public class Station {
     //fields
     private ArrayList<People> station; 
-    private int[] stationNumber;
      
 
     //constructor
     public Station(){
-        stationNumber = new People[31];
+        station = new ArrayList<People>();
     }
 
     //methods
-    public void personAdd(People person1){
-        stationNumber[People.originLoc()] = person1;
+    public void personAdd(People person){
+        station.add(person);
     }
 
 
