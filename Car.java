@@ -1,3 +1,4 @@
+import java.util.*;
 public class Car {
     //fields
     private int oLoc;
@@ -5,6 +6,7 @@ public class Car {
     private int numPassengers;
     private int direction;
     private int position;
+    private ArrayList<People> passengersC ;
 
     //constructor
     public Car(int myOLocation, int myPos, int myDest, int myNumPass, int myDirection){
@@ -13,6 +15,8 @@ public class Car {
         destination = myDest;
         numPassengers = myNumPass;
         direction = myDirection;
+        passengersC = new ArrayList<People>();
+        
     }
 
     //methods
@@ -21,6 +25,12 @@ public class Car {
     }
 
     public void drive(){
+       if(position == destination){
+           System.out.println("The Car is at its destination");
+       }
+       if(position > destination){
+           position --;
+       }
         position += 1;
     }
 }
