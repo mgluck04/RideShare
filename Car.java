@@ -6,7 +6,7 @@ public class Car {
     private int numPassengers;
     private int direction;
     private int position;
-    private ArrayList<People> passengersC ;
+    private ArrayList<Person> passengersC ;
 
     //constructor
     public Car(int myOLocation, int myPos, int myDest, int myNumPass, int myDirection){
@@ -15,7 +15,7 @@ public class Car {
         destination = myDest;
         numPassengers = myNumPass;
         direction = myDirection;
-        passengersC = new ArrayList<People>();
+        passengersC = new ArrayList<Person>();
         
     }
 
@@ -31,6 +31,24 @@ public class Car {
        if(position > destination){
            position --;
        }
-        position += 1;
+       if(position < destination){
+           position ++;
+       }
+       
+    }
+    public int getOLoc(){
+        return oLoc;
+    }
+    public int getDestination(){
+        return destination;
+    }
+    public int getNumPassengers(){
+        return numPassengers;
+    }
+    public int getDirection(){
+        return direction;
+    }
+    public int getPosition(){
+        return position;
     }
 }
