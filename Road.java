@@ -1,12 +1,20 @@
+import java.util.*;
 public class Road {
     //fields
-    private Station[] roadLength;
+    private Station[] road;
 
     //constructor
     public Road()
     {
-        roadLength = new Station[31];
+        road = new Station[31];
+        for(int i = 0; i<road.length; i++){
+            road[i]= new Station(i);
+            
+        }
     }
+    
+    //methods
+    
 
 
 }

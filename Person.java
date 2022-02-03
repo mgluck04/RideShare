@@ -1,22 +1,22 @@
-public class People{
+public class Person{
     //fields
-    private int originalLocation;
-    private int currentLocation;
+   
     private int destination;
+    
 
     //constructor
-    public People(){
-        originalLocation = 5;
+    public Person(){
+        
         destination = 10;
-        currentLocation = originalLocation;
+       
     }
     
     //methods
     public String toString(){
-        return "loc = " + currentLocation + "dest = " + destination;
+        return   "dest = " + destination;
     }
-
-    public int originLoc(){
-        return originalLocation;
+    public int getDestination(){
+        return destination;
     }
+    
 }
