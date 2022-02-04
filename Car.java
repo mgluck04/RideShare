@@ -9,12 +9,18 @@ public class Car {
     private ArrayList<Person> passengersC ;
 
     //constructor
-    public Car(int myOLocation, int myPos, int myDest, int myNumPass, int myDirection){
+    public Car(int myOLocation, int myPos, int myDest, int myNumPass){
         oLoc = myOLocation;
         position = myPos;
         destination = myDest;
         numPassengers = myNumPass;
-        direction = myDirection;
+        if(myDest > myOLocation){
+            direction = 1;
+        }
+        if(myDest < myOLocation){
+            direction = -1;
+        }
+
         passengersC = new ArrayList<Person>();
         
     }

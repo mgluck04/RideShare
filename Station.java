@@ -37,6 +37,15 @@ public class Station {
         }
         return null;
     }
+    public Person nextRightPerson(){
+        for(int i = 0; i<stationAL.size(); i++){
+            if(stationAL.get(i).getDestination() > stationNum){
+                return stationAL.remove(i);
+            }
+
+        }
+        return null;
+    }
 
 
 
