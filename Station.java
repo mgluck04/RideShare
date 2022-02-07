@@ -9,6 +9,7 @@ public class Station {
     //constructor
     public Station(int num){
         stationAL = new ArrayList<Person>();
+        stationNum = num;
 
 
     }

@@ -24,6 +24,12 @@ public class Car {
         passengersC = new ArrayList<Person>();
         
     }
+    public Car(){
+        oLoc = (int) (Math.random() * 31) +1; 
+        position = oLoc;
+        destination = (int) (Math.random() * 31) +1; 
+        
+    }
 
     //methods
     public String toString(){

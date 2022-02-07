@@ -7,7 +7,7 @@ public class Person{
     //constructor
     public Person(){
         
-        destination = 10;
+        destination =(int) (Math.random() * 31) +1; 
        
     }
     
