@@ -13,12 +13,7 @@ public class Station {
 
 
     }
-    public Station(Person p1, Person p2 ){
-        stationAL.add(p1);
-        stationAL.add(p2);
-
-    }
-
+    
     //methods
     public void personAdd(Person person){
         stationAL.add(person);
@@ -47,6 +42,10 @@ public class Station {
         }
         return null;
     }
+    public String toString(){
+        return( "Station Number: " + stationNum + "List of People in Station: " + stationAL.toString() );
+    }
+
 
 
 

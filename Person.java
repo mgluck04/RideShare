@@ -7,13 +7,13 @@ public class Person{
     //constructor
     public Person(){
         
-        destination =(int) (Math.random() * 31) +1; 
+        destination =(int) (Math.random() * 31) ; 
        
     }
     
     //methods
     public String toString(){
-        return   "dest = " + destination;
+        return   "Destinaton:  " + destination;
     }
     public int getDestination(){
         return destination;

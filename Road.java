@@ -11,14 +11,26 @@ public class Road {
         road = new Station[31];
         for(int i = 0; i<road.length; i++){
             road[i]= new Station(i);
+            for(int j = 0; j < 5; j++){
+                int x =(int) (Math.random() * 2);
+                if(x == 0){
+                    road[i].personAdd(new Person() );
+                }
+    
+            }
+        
             
         }
+        
     }
     
-    //main mock
-    Car c1 = new Car(4, 4, 10, 1);
+   
+    
 
     //methods
+
+    //to string will loop through stations and add info to a variable
+    
     
 
 
