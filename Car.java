@@ -33,7 +33,7 @@ public class Car {
 
     //methods
     public String toString(){
-        return ("Starting Position: " + oLoc + " ");
+        return ("Starting Position: " + oLoc + "Destination: " + destination + "Number of Passengers: " + numPassengers);
     }
 
     public void drive(){

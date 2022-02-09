@@ -2,6 +2,7 @@ public class Person{
     //fields
    
     private int destination;
+    private int location;
     
 
     //constructor

@@ -30,6 +30,15 @@ public class Road {
     //methods
 
     //to string will loop through stations and add info to a variable
+    public String toString(){
+        String str = "";
+        for(Station x : road){
+            str += x.toString();
+
+        }
+        return str;
+    }
+
     
     
 

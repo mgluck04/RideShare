@@ -43,7 +43,7 @@ public class Station {
         return null;
     }
     public String toString(){
-        return( "Station Number: " + stationNum + "List of People in Station: " + stationAL.toString() );
+        return( "Station Number:" + stationNum + " List of People in Station: " + stationAL.toString() + " \n");
     }
 
 
