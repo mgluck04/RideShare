@@ -29,6 +29,23 @@ public class Road {
 
     //methods
 
+    public void addCar(Car c){
+        carAL.add(c);
+    }
+
+    public void move(){
+        for(int s = 0; s < road.length; s++){
+            for(int c = 0; c < carAL.size(); c++){
+                if(carAL.get(c).getDirection() == 1){
+                    for(int i = 0; i < road[s].getStationAL().size(); i++){
+                        carAL.get(c)
+                    }
+                }
+            }
+           
+        }    
+    }
+
     //to string will loop through stations and add info to a variable
     public String toString(){
         String str = "";

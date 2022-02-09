@@ -24,6 +24,9 @@ public class Station {
     public void personRemove(int pos){
         stationAL.remove(pos);
     }
+    public ArrayList<Person> getStationAL(){
+        return stationAL;
+    }
     public Person nextLeftPerson(){
         for(int i = 0; i<stationAL.size(); i++){
             if(stationAL.get(i).getDestination() < stationNum){
