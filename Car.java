@@ -28,18 +28,27 @@ public class Car {
         oLoc = (int) (Math.random() * 31) +1; 
         position = oLoc;
         destination = (int) (Math.random() * 31) +1; 
+        passengersC = new ArrayList<Person>();
+        for(int i = 0; i <3; i++){
+            int random = (int) (Math.random() * 2);
+            if( random == 1){
+                passengersC.add(new Person());
+            }
+        }
         
     }
 
     //methods
+    public void addPpl(Person p){
+        passengersC.add(p);
+    }
+
     public String toString(){
-        return ("Starting Position: " + oLoc + "Destination: " + destination + "Number of Passengers: " + numPassengers);
+        return (" Starting Position:" + oLoc + " Destination:" + destination + " Position:" + position + " Number of Passengers: " + passengersC.size() + "\n");
     }
 
     public void drive(){
-       if(position == destination){
-           System.out.println("The Car is at its destination");
-       }
+
        if(position > destination){
            position --;
        }
